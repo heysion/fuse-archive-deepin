@@ -2,3 +2,11 @@
 
 %:
 	dh $@
+
+
+override_dh_auto_test:
+	if /sbin/modinfo fuse > /dev/null 2>&1; then \
+		dh_auto_test; \
+	else \
+		echo "Skipping dh_auto_test because found fuse failed"; \
+	fi
