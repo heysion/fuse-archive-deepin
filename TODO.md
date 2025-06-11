@@ -1,0 +1,55 @@
+# Improvement Ideas
+
+- [x] Automatically create the mount point if it does not already exist.
+- [x] Automatically remove the mount point if it has been created by `fuse-archive` in the first place.
+- [x] Handle special files (sockets, FIFOs or pipes, character and block devices).
+- [x] Add a `-o nospecials` option.
+- [x] Handle symlinks.
+- [x] Add a `-o nosymlinks` option.
+- [x] Handle empty directories (https://github.com/google/fuse-archive/issues/17).
+- [x] Improve the computation of the access bits of each inode.
+- [x] Gracefully handle file name collisions by deduplicating the colliding names.
+- [x] Add a convenient logging system.
+- [x] Add a `--verbose` option.
+- [x] Keep track of the number of links to each inode.
+- [x] Keep track of the number of blocks used by each inode.
+- [x] Implement the `statfs` function.
+- [x] Print versions of linked libraries when using the `--version` option.
+- [x] Add a cache system holding the full extracted data.
+- [x] Add a `-o nocache` option.
+- [x] Remove unused options.
+- [x] Automatically request a decryption password when dealing with an encrypted archive.
+- [x] Add comprehensive tests.
+- [x] Document the version numbering system.
+- [x] Create a `man` page.
+- [x] Modify the `Makefile` so that `make doc` refreshes the `man` page.
+- [x] Modify the `Makefile` so that `make install` also installs the `man` page (https://github.com/google/fuse-archive/issues/24).
+- [x] Add a `-o fmask` option.
+- [x] Add a `-o dmask` option.
+- [x] Honor the original UID and GID when using the `-o default_permissions` option.
+- [x] Modify the `Makefile` so that `make check` runs the new tests in `test/test.py`.
+- [x] Handle hardlinks (https://github.com/google/fuse-archive/issues/18).
+- [x] Add tests for hardlinks.
+- [x] Add tests for big files.
+- [x] Document the `-o nocache` option.
+- [x] Document the `-o nosymlink` option.
+- [x] Document the `-o nospecials` option.
+- [x] Document the returned error values.
+- [x] Document the `-o dmask=M` option.
+- [x] Document the `-o fmask=M` option.
+- [x] Document the `-o uid=N` option.
+- [x] Document the `-o gid=N` option.
+- [x] Document the `-o default_permissions` option.
+- [x] Add a `-o force` option.
+- [x] Add tests for the `lzma` compression method.
+- [x] Add tests for the `xz` compression method.
+- [x] Add tests for the `zstd` compression method.
+- [x] Add tests for the `Z` compression method.
+- [x] Add a `-o nohardlink` option.
+- [x] Optimize the tree structure in order to avoid storing all the full paths in memory.
+- [x] Optimize the `Reader` struct in order to reuse the existing archive file descriptor instead of opening a new one every time.
+- [x] Check the archive file type to avoid reading from a pipe or a directory.
+- [x] Document the cache system.
+- [x] Optimize the `Reader` recycling system.
+- [x] Use a `Reader` when building the tree.
+- [x] Add a rolling buffer of uncompressed data to each `Reader`.

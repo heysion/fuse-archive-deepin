@@ -1,4 +1,10 @@
-template-repository (1.0-1) unstable; urgency=medium
+fuse-archive (1.12-18) unstable; urgency=medium
+
+  * import upstream v1.12-18 by 0b4c7e52dc247f24c08ed81273c52fdaaf2ad46d
+
+ -- heysion <heysion@deepin.com>  Wed, 11 Jun 2025 13:12:33 +0800
+
+fuse-archive (1.0-1) unstable; urgency=medium
 
   * Initial release
 
