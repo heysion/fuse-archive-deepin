@@ -2,7 +2,7 @@ Source: fuse-archive
 Section: unknown
 Priority: optional
 Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11), pkg-config, libarchive-dev, libfuse-dev, libfuse3-dev, libboost-dev, liblz4-dev, brotli, ncompress, lrzip, lzop, python3-minimal, make
+Build-Depends: debhelper (>= 11), pkg-config, python3-dev, libarchive-dev, libfuse-dev, libfuse3-dev, libboost-dev, liblz4-dev, make, brotli, ncompress, lrzip, lzop
 Standards-Version: 4.1.3
 Homepage: https://github.com/deepin-community/fuse-archive
 
